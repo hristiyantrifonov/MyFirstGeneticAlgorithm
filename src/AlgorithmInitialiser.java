@@ -15,7 +15,6 @@ public class AlgorithmInitialiser {
 		double mutationRate = 0.01;
 		int	populationMax = 500;
 		Population population;
-		List<DNA> populationArr = new ArrayList<DNA>();
 
 		population = new Population(target,mutationRate, populationMax);
 

@@ -119,31 +119,11 @@ public class Population {
 		}
 		
 		this.bestMatch = dnaList.get(mostFitElementIndex).getWholeExpression();
-//		this.displayPanel.setBestMatch(this.bestMatch);
 		
 		if (mostFit >= this.perfectMatch) {
-			System.out.println("Finished in " + this.generationsNum + " generation.");
+			System.out.println("Finished in " + this.generationsNum + " generations.");
 			this.finished = true;
 		}
 		
 	}
-	
-	
-	//For displaying purposes
-	public List<String> allExpresions(){
-		
-		List<String> expressions = new ArrayList<String>();
-		
-		for(int i = 0; i < this.stringsDisplayLimit; i++) {
-			
-			String currentExpression = this.dnaList.get(i).getWholeExpression();
-			expressions.add(currentExpression);
-		}
-		
-		return expressions;
-		
-	}
-	
-	
-	
 }
